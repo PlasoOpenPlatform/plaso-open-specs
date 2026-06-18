@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'PlasoFeaturedSDK'
-    s.version               = '0.2.4'
+    s.version               = '0.2.5'
     s.summary               = 'PlasoFeaturedSDK iOS SDK'
     s.description           = <<-DESC
     PlasoFeaturedSDK iOS SDK. Universial Plaso Features.
@@ -31,7 +31,8 @@ Pod::Spec.new do |s|
 
       ss.frameworks =  'SystemConfiguration', 'QuartzCore', 'CoreGraphics','AudioToolbox','CoreAudio', 'AVFoundation', 'OpenGLES','PDFKit','JavaScriptCore'
 
-      ss.dependency 'SVProgressHUD', '~> 2.2.2'
+      ss.dependency 'SVProgressHUD' #, '~> 2.2.2'
+      ss.dependency 'MBProgressHUD' #, '~> 1.2.0'
       ss.dependency 'MJExtension', '~> 3.0.15.1'
       ss.dependency 'MJRefresh', '~> 3.1.15' 
       ss.dependency 'SDWebImage', '5.18.12'
@@ -40,7 +41,7 @@ Pod::Spec.new do |s|
       ss.dependency 'AFNetworking', '~> 4.0.0'
       ss.dependency 'PINCache', '~> 2.3'
       ss.dependency 'AliyunOSSiOS', '2.11.1' 
-      ss.dependency 'Sentry', '8.41.0'
+      ss.dependency 'Sentry'
       ss.dependency 'KakaJSON', '~> 1.1.2'
       ss.dependency 'SAMKeychain', '~> 1.5.3'
       ss.dependency "FMDB", "2.7.11"
