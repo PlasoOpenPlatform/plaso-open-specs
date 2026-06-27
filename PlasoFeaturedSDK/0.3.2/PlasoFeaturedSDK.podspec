@@ -65,6 +65,7 @@ Pod::Spec.new do |s|
 
     s.subspec 'PlasoAnnoMiniBook' do |ss|
       ss.vendored_frameworks   = ["PlasoAnnoMiniBook.xcframework"]
+      ss.resources = ['PlasoAnnoMiniBookResources.bundle']
 
       ss.frameworks =  'SystemConfiguration', 'QuartzCore', 'CoreGraphics','AudioToolbox','CoreAudio', 'AVFoundation', 'OpenGLES','PDFKit','JavaScriptCore'
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'PlasoFeaturedSDK'
-    s.version               = '0.3.2'
+    s.version               = '0.3.1'
     s.summary               = 'PlasoFeaturedSDK iOS SDK'
     s.description           = <<-DESC
     PlasoFeaturedSDK iOS SDK. Universial Plaso Features.
@@ -65,7 +65,8 @@ Pod::Spec.new do |s|
 
     s.subspec 'PlasoAnnoMiniBook' do |ss|
       ss.vendored_frameworks   = ["PlasoAnnoMiniBook.xcframework"]
-
+      ss.resources = ['PlasoAnnoMiniBookResources.bundle']
+      
       ss.frameworks =  'SystemConfiguration', 'QuartzCore', 'CoreGraphics','AudioToolbox','CoreAudio', 'AVFoundation', 'OpenGLES','PDFKit','JavaScriptCore'
 
       ss.dependency 'PlasoFeaturedSDK/PlasoCommonSDK'
