@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'PlasoFeaturedSDK'
-    s.version               = '0.3.1'
+    s.version               = '0.3.3'
     s.summary               = 'PlasoFeaturedSDK iOS SDK'
     s.description           = <<-DESC
     PlasoFeaturedSDK iOS SDK. Universial Plaso Features.
